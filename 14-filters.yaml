@@ -41,3 +41,12 @@
   - name: print min and max
     ansible.builtin.debug:
       msg: "{{ ages | min }}"
+
+- name: print min and max
+  hosts: localhost
+  vars:
+    ages: [25, 35, 67, 89]
+  tasks:
+  - name: print min and max
+    ansible.builtin.debug:
+      msg: "{{ ages | max }}"
