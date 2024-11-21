@@ -68,11 +68,11 @@
   hosts: localhost
   vars:
     my_list:
-    - { "key": "course","value": "devops" }
-    -  { "key": "trainer","value": "Siva kumar" }
+    - { "key": "course", "value": "devops" }
+    -  { "key": "trainer", "value": "Siva kumar" }
     -  {  "key": "duration", "value": "120hrs" }
   tasks:
   - name: convert dictionary into items/list
     ansible.builtin.debug:
-      msg: "{{ my_dict | my_list2dict }}" 
+      msg: "{{ my_list | items2dict }}" 
 
