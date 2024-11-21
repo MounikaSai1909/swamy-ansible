@@ -10,7 +10,7 @@
       Course: "DevOps"
     ansible.builtin.debug:
       msg: "Hi,We are learning {{Course}} from {{Trainer}} ,Duration is {{Duration}}."
-  tasks:
+  
   - name: print information
     ansible.builtin.debug:
       msg: "Hi,We are learning {{Course}} from {{Trainer}} ,Duration is {{Duration}}."
