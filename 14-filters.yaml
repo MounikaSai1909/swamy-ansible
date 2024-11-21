@@ -74,5 +74,5 @@
   tasks:
   - name: convert dictionary into items/list
     ansible.builtin.debug:
-      msg: "{{ my_dict | items2dict }}" 
+      msg: "{{ my_dict | my_list2dict }}" 
 
