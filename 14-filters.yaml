@@ -65,6 +65,7 @@
       msg: "{{ my_dict | dict2items }}" 
 
 - name: convert items into dictionary
+  hosts: localhost
   vars:
     my_list:
     - { "key": "course","value": "devops" }
