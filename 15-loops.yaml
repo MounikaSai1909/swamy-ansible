@@ -8,3 +8,13 @@
     - linux
     - shell
     - ansible
+
+
+- name: install packages
+  hosts: web
+  become: yes
+  tasks: 
+  - name: install packages
+    ansible.builtin.dnf:
+      name:
+      state:
