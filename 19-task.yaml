@@ -22,7 +22,11 @@
       - frontend
       register: ec2_instances_info
 
-    - name: create route53 records
+    - name: print output
+      ansible.builtin.debug:
+         msg: "Output: {{ ec2_instances_info }}"
+
+    #- name: create route53 records
       amazon.aws.route53:
         record: 
 
