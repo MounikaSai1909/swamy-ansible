@@ -20,8 +20,7 @@
         image_id: ami-09c813fb71547fc4f
         tags:
            Name: "{{ item }}"
-      loop:
-      - "{{ instances }}"
+      loop: "{{ instances }}"
       register: ec2_instances_info
 
     - name: print output
